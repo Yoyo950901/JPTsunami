@@ -1,0 +1,170 @@
+{
+  "Report": {
+    "-xmlns": "http://xml.kishou.go.jp/jmaxml1/",
+    "-xmlns:jmx": "http://xml.kishou.go.jp/jmaxml1/",
+    "Control": {
+      "Title": "津波警報・注意報・予報a",
+      "DateTime": "2018-12-04T10:30:00Z",
+      "Status": "訓練",
+      "EditorialOffice": "気象庁本庁",
+      "PublishingOffice": "気象庁"
+    },
+    "Head": {
+      "-xmlns": "http://xml.kishou.go.jp/jmaxml1/informationBasis1/",
+      "Title": "津波予報",
+      "ReportDateTime": "2018-12-04T19:30:00+09:00",
+      "TargetDateTime": "2018-12-04T19:30:00+09:00",
+      "EventID": "20181204180000",
+      "InfoType": "発表",
+      "InfoKind": "津波警報・注意報・予報",
+      "InfoKindVersion": "1.0_1",
+      "Headline": { "Text": "＊＊＊これは訓練です＊＊＊ 津波注意報を解除しました。" }
+    },
+    "Body": {
+      "-xmlns": "http://xml.kishou.go.jp/jmaxml1/body/seismology1/",
+      "-xmlns:jmx_eb": "http://xml.kishou.go.jp/jmaxml1/elementBasis1/",
+      "Tsunami": {
+        "Forecast": {
+          "CodeDefine": {
+            "Type": [
+              {
+                "-xpath": "Item/Area/Code",
+                "#text": "津波予報区"
+              },
+              {
+                "-xpath": "Item/Category/Kind/Code",
+                "#text": "警報等情報要素／津波警報・注意報・予報"
+              },
+              {
+                "-xpath": "Item/Category/LastKind/Code",
+                "#text": "警報等情報要素／津波警報・注意報・予報"
+              }
+            ]
+          },
+          "Item": [
+            {
+              "Area": {
+                "Name": "千葉県内房",
+                "Code": "311"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報解除",
+                  "Code": "60"
+                },
+                "LastKind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "東京湾内湾",
+                "Code": "312"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報解除",
+                  "Code": "60"
+                },
+                "LastKind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "伊豆諸島",
+                "Code": "320"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報解除",
+                  "Code": "60"
+                },
+                "LastKind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "相模湾・三浦半島",
+                "Code": "330"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報解除",
+                  "Code": "60"
+                },
+                "LastKind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "静岡県",
+                "Code": "380"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報解除",
+                  "Code": "60"
+                },
+                "LastKind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Earthquake": {
+        "OriginTime": "2018-12-04T18:00:00+09:00",
+        "ArrivalTime": "2018-12-04T18:00:00+09:00",
+        "Hypocenter": {
+          "Area": {
+            "Name": "東京都２３区",
+            "Code": {
+              "-type": "震央地名",
+              "#text": "350"
+            },
+            "jmx_eb:Coordinate": {
+              "-description": "北緯３５．６度　東経１３９．７度　深さ　３０ｋｍ",
+              "-datum": "日本測地系",
+              "#text": "+35.6+139.7-30000/"
+            },
+            "NameFromMark": "館山の北北西７０ｋｍ付近",
+            "MarkCode": {
+              "-type": "震央補助",
+              "#text": "301"
+            },
+            "Direction": "北北西",
+            "Distance": {
+              "-unit": "km",
+              "#text": "70"
+            }
+          }
+        },
+        "jmx_eb:Magnitude": {
+          "-type": "Mj",
+          "-description": "Ｍ７．３",
+          "#text": "7.3"
+        }
+      },
+      "Comments": {
+        "WarningComment": {
+          "-codeType": "固定付加文",
+          "Text": "現在、大津波警報・津波警報・津波注意報を発表している沿岸はありません。",
+          "Code": "0107"
+        }
+      }
+    }
+  }
+}

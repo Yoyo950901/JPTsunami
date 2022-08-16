@@ -1,0 +1,1864 @@
+{
+  "Report": {
+    "-xmlns": "http://xml.kishou.go.jp/jmaxml1/",
+    "-xmlns:jmx": "http://xml.kishou.go.jp/jmaxml1/",
+    "Control": {
+      "Title": "津波警報・注意報・予報a",
+      "DateTime": "2016-08-31T22:13:00Z",
+      "Status": "訓練",
+      "EditorialOffice": "気象庁本庁",
+      "PublishingOffice": "気象庁"
+    },
+    "Head": {
+      "-xmlns": "http://xml.kishou.go.jp/jmaxml1/informationBasis1/",
+      "Title": "大津波警報・津波警報・津波注意報",
+      "ReportDateTime": "2016-09-01T07:13:00+09:00",
+      "TargetDateTime": "2016-09-01T07:13:00+09:00",
+      "EventID": "20160901071000",
+      "InfoType": "発表",
+      "InfoKind": "津波警報・注意報・予報",
+      "InfoKindVersion": "1.0_1",
+      "Headline": {
+        "Text": "＊＊＊これは訓練です＊＊＊ 東日本大震災クラスの津波が来襲します。 大津波警報・津波警報を発表しました。 ただちに避難してください。",
+        "Information": {
+          "-type": "津波予報領域表現",
+          "Item": [
+            {
+              "Kind": {
+                "Name": "大津波警報",
+                "Code": "52"
+              },
+              "Areas": {
+                "-codeType": "津波予報区",
+                "Area": [
+                  {
+                    "Name": "関東地方",
+                    "Code": "491"
+                  },
+                  {
+                    "Name": "伊豆・小笠原諸島",
+                    "Code": "492"
+                  },
+                  {
+                    "Name": "東海地方",
+                    "Code": "494"
+                  },
+                  {
+                    "Name": "近畿四国太平洋沿岸",
+                    "Code": "691"
+                  },
+                  {
+                    "Name": "瀬戸内海沿岸",
+                    "Code": "693"
+                  },
+                  {
+                    "Name": "鹿児島県",
+                    "Code": "787"
+                  },
+                  {
+                    "Name": "九州地方東部",
+                    "Code": "791"
+                  },
+                  {
+                    "Name": "沖縄県地方",
+                    "Code": "891"
+                  }
+                ]
+              }
+            },
+            {
+              "Kind": {
+                "Name": "津波警報",
+                "Code": "51"
+              },
+              "Areas": {
+                "-codeType": "津波予報区",
+                "Area": [
+                  {
+                    "Name": "北海道太平洋沿岸",
+                    "Code": "191"
+                  },
+                  {
+                    "Name": "東北地方太平洋沿岸",
+                    "Code": "291"
+                  },
+                  {
+                    "Name": "九州地方西部",
+                    "Code": "792"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Body": {
+      "-xmlns": "http://xml.kishou.go.jp/jmaxml1/body/seismology1/",
+      "-xmlns:jmx_eb": "http://xml.kishou.go.jp/jmaxml1/elementBasis1/",
+      "Tsunami": {
+        "Forecast": {
+          "CodeDefine": {
+            "Type": [
+              {
+                "-xpath": "Item/Area/Code",
+                "#text": "津波予報区"
+              },
+              {
+                "-xpath": "Item/Category/Kind/Code",
+                "#text": "警報等情報要素／津波警報・注意報・予報"
+              },
+              {
+                "-xpath": "Item/Category/LastKind/Code",
+                "#text": "警報等情報要素／津波警報・注意報・予報"
+              }
+            ]
+          },
+          "Item": [
+            {
+              "Area": {
+                "Name": "茨城県",
+                "Code": "300"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:10:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "千葉県九十九里・外房",
+                "Code": "310"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "千葉県内房",
+                "Code": "311"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "伊豆諸島",
+                "Code": "320"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "小笠原諸島",
+                "Code": "321"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:20:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "相模湾・三浦半島",
+                "Code": "330"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "静岡県",
+                "Code": "380"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "愛知県外海",
+                "Code": "390"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "伊勢・三河湾",
+                "Code": "391"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "三重県南部",
+                "Code": "400"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "大阪府",
+                "Code": "510"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "兵庫県瀬戸内海沿岸",
+                "Code": "521"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "淡路島南部",
+                "Code": "522"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "和歌山県",
+                "Code": "530"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "徳島県",
+                "Code": "580"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "香川県",
+                "Code": "590"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": {
+                "ArrivalTime": "2016-09-01T07:20:00+09:00",
+                "Condition": "ただちに津波来襲と予測"
+              },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "愛媛県宇和海沿岸",
+                "Code": "600"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "愛媛県瀬戸内海沿岸",
+                "Code": "601"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "高知県",
+                "Code": "610"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "山口県瀬戸内海沿岸",
+                "Code": "701"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "大分県瀬戸内海沿岸",
+                "Code": "750"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": {
+                "ArrivalTime": "2016-09-01T07:20:00+09:00",
+                "Condition": "ただちに津波来襲と予測"
+              },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "大分県豊後水道沿岸",
+                "Code": "751"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "宮崎県",
+                "Code": "760"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "Condition": "津波到達中と推測" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "鹿児島県東部",
+                "Code": "770"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "種子島・屋久島地方",
+                "Code": "771"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "奄美群島・トカラ列島",
+                "Code": "772"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "鹿児島県西部",
+                "Code": "773"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "沖縄本島地方",
+                "Code": "800"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "大東島地方",
+                "Code": "801"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "大津波警報：発表",
+                  "Code": "53"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "巨大",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "北海道太平洋沿岸東部",
+                "Code": "100"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "北海道太平洋沿岸中部",
+                "Code": "101"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "北海道太平洋沿岸西部",
+                "Code": "102"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:10:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "青森県太平洋沿岸",
+                "Code": "201"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "岩手県",
+                "Code": "210"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "宮城県",
+                "Code": "220"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "福島県",
+                "Code": "250"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:20:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "東京湾内湾",
+                "Code": "312"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "岡山県",
+                "Code": "560"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "広島県",
+                "Code": "570"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T07:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "福岡県瀬戸内海沿岸",
+                "Code": "710"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "有明・八代海",
+                "Code": "712"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "長崎県西方",
+                "Code": "730"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "熊本県天草灘沿岸",
+                "Code": "740"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "宮古島・八重山地方",
+                "Code": "802"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波警報",
+                  "Code": "51"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T08:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "-description": "高い",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "北海道日本海沿岸北部",
+                "Code": "110"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "北海道日本海沿岸南部",
+                "Code": "111"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "オホーツク海沿岸",
+                "Code": "120"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:10:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "青森県日本海沿岸",
+                "Code": "200"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T09:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "陸奥湾",
+                "Code": "202"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "秋田県",
+                "Code": "230"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:20:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "山形県",
+                "Code": "240"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "新潟県上中下越",
+                "Code": "340"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "佐渡",
+                "Code": "341"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:50:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "富山県",
+                "Code": "350"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "石川県能登",
+                "Code": "360"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "石川県加賀",
+                "Code": "361"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:20:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "福井県",
+                "Code": "370"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "京都府",
+                "Code": "500"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "兵庫県北部",
+                "Code": "520"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "鳥取県",
+                "Code": "540"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:40:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "島根県出雲・石見",
+                "Code": "550"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:20:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "隠岐",
+                "Code": "551"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T11:30:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "山口県日本海沿岸",
+                "Code": "700"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "福岡県日本海沿岸",
+                "Code": "711"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:00:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "佐賀県北部",
+                "Code": "720"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:20:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            },
+            {
+              "Area": {
+                "Name": "壱岐・対馬",
+                "Code": "731"
+              },
+              "Category": {
+                "Kind": {
+                  "Name": "津波注意報",
+                  "Code": "62"
+                },
+                "LastKind": {
+                  "Name": "津波なし",
+                  "Code": "00"
+                }
+              },
+              "FirstHeight": { "ArrivalTime": "2016-09-01T10:10:00+09:00" },
+              "MaxHeight": {
+                "jmx_eb:TsunamiHeight": {
+                  "-type": "津波の高さ",
+                  "-unit": "m",
+                  "-condition": "不明",
+                  "#text": "NaN"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Earthquake": {
+        "OriginTime": "2016-09-01T07:10:00+09:00",
+        "ArrivalTime": "2016-09-01T07:10:00+09:00",
+        "Hypocenter": {
+          "Area": {
+            "Name": "和歌山県南方沖",
+            "Code": {
+              "-type": "震央地名",
+              "#text": "689"
+            },
+            "jmx_eb:Coordinate": {
+              "-description": "北緯３３．２度　東経１３６．０度　深さ　１０ｋｍ",
+              "-datum": "日本測地系",
+              "#text": "+33.2+136.0-10000/"
+            },
+            "NameFromMark": "潮岬の南東３０ｋｍ付近",
+            "MarkCode": {
+              "-type": "震央補助",
+              "#text": "502"
+            },
+            "Direction": "南東",
+            "Distance": {
+              "-unit": "km",
+              "#text": "30"
+            }
+          }
+        },
+        "jmx_eb:Magnitude": {
+          "-type": "Mj",
+          "-condition": "不明",
+          "-description": "Ｍ８を超える巨大地震",
+          "#text": "NaN"
+        }
+      },
+      "Comments": {
+        "WarningComment": {
+          "-codeType": "固定付加文",
+          "Text": "東日本大震災クラスの津波が来襲します。 　 ただちに避難してください。 　 ＜大津波警報＞ 大きな津波が襲い甚大な被害が発生します。 沿岸部や川沿いにいる人はただちに高台や避難ビルなど安全な場所へ避難してください。 津波は繰り返し襲ってきます。警報が解除されるまで安全な場所から離れないでください。 　 ＜津波警報＞ 津波による被害が発生します。 沿岸部や川沿いにいる人はただちに高台や避難ビルなど安全な場所へ避難してください。 津波は繰り返し襲ってきます。警報が解除されるまで安全な場所から離れないでください。 　 ＜津波注意報＞ 海の中や海岸付近は危険です。 海の中にいる人はただちに海から上がって、海岸から離れてください。 潮の流れが速い状態が続きますので、注意報が解除されるまで海に入ったり海岸に近づいたりしないようにしてください。 　 警報が発表された沿岸部や川沿いにいる人はただちに高台や避難ビルなど安全な場所へ避難してください。 到達予想時刻は、予報区のなかで最も早く津波が到達する時刻です。場所によっては、この時刻よりもかなり遅れて津波が襲ってくることがあります。 到達予想時刻から津波が最も高くなるまでに数時間以上かかることがありますので、観測された津波の高さにかかわらず、警報が解除されるまで安全な場所から離れないでください。",
+          "Code": "0141 0149 0121 0122 0123 0131"
+        }
+      }
+    }
+  }
+}
