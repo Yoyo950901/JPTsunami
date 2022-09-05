@@ -33,7 +33,7 @@ logfile.close
 print(sp.title.text)
 z = ""
 for i in sp.select("entry"): #搜尋標題為"津波警報・注意報・予報a"的XML
-    if i.title.text == "津波警報・注意報・予報a":
+    if "津波警報・注意報・予報a" in i.title.text:
         url = i.id.text #若取得標題為海嘯警報的資料 設定URL
         logid2 = i.update.text
         if logid1 == logid2: #判定情報是否為新的
